@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="veiwport" content="width=with-device-width, initial-scale=1.0">
+        <title>spinny christmas tree cuz why not</title>
+
+        <style>
+            body {
+                background: linear-gradient(45deg, #ff0000, #00ff00, #ffffff);
+                color: #fff;
+                font-family: Comic Sans Ms, sans-serif;
+                text-align: center;
+                overflow-x: hidden;
+
+            }
+            h1 {
+                font-size: 3em;
+                text-shadow: 2px 2px 0px #000;
+                animation: spin 5s linear infinite;
+            }
+            @keyframes spin {
+                0% { transform: rotate(0deg);}
+                100% { transform: rotate(360deg);}
+            }
+            .snow {
+                position: absolute;
+                top: -10px;
+                left: 50%;
+                width: 100px;
+                height: 100px;
+                background: url('https://i.imgur.com/QhTwRsT.png');
+                animation: fall 10s infinite;
+            }
+            @keyframes fall {
+                0% {transform: translate(-50%, -100px);}
+                100% {transform: translate(-50%, 120vh);}
+            }
+            .tree {
+                font-size: 2em;
+                margin: 20px auto;
+            }
+            .tree div {
+                line-height: 1.2;
+            }
+            .tree div span {
+                color: yellow;
+                font-weight: bold;
+                animation: blink 1s infinite alternate;
+            }
+            @keyframes blink {
+                0% { opacity: 1;}
+                100% {opacity: 0;}
+            }
+            .footer {
+                margin-top: 50px;
+                font-size: 1.2em;
+                color: #000;
+                background: #fff;
+                padding: 10px;
+
+            }
+            button {
+                background: #ff0;
+                color: #000;
+                font-size: 1.2em;
+                padding: 10px;
+                border: #000;
+                cursor: pointer;
+                transition: transform 0.1s;
+
+            }
+
+            button:active {
+                transform: scale(5.5) rotate(25deg);
+            }
+
+            .image-section img {
+                width: 300px;
+                border: 5px solid #fff;
+                border-radius: 15px;
+                margin: 10px;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <h1>🎄 Welcome to The Goofy Ahh Christmas Land</h1>
+
+        <div class="snow"></div>
+        <div class="snow" style="animation-delay: 2s;"></div>
+        <div class="snow" style="animation-delay: 4s;"></div>
+
+    <div class="tree">
+         <div>🎄</div>
+         <div>✨🌟✨</div>
+         <div>🎁🎁🎁</div>
+         <div><span>CLICK ME</span> ❄️</div>
+    </div>
+
+    <button onclick="alert('ho ho ho! stay goffy yall')">Press Me</button>
+
+    <div class="image-section">
+        <img src="https://media.istockphoto.com/id/1346236801/vector/vector-christmas-tree-isolated-on-transparent-background-beautiful-shining-christmas-tree.jpg?s=1024x1024&w=is&k=20&c=ogL-AbD0IisaUhGkK8kutohRnGBaiC7OcOTC9jPoo2Y=" alt="Christmas tree">
+        <img src="https://media.istockphoto.com/id/493085772/vector/snowman.jpg?s=1024x1024&w=is&k=20&c=BGI9fjFbJ3UWGhpXcLZ3w_UuTQnkYaH74k0JU7IlkXo=" alt="Snowman">
+        <img src="https://media.istockphoto.com/id/1179390817/vector/silhouette-of-santa-on-a-sleigh-flying-with-deer-and-throwing-gifts-on-a-white.jpg?s=1024x1024&w=is&k=20&c=vkxqQutKu6jfjPQhaopmtn58qPzwKlPi52C4JuQcBss=" alt="Santa">
+    </div>
+        
+    <div class="footer">
+        © 2024 Scuffed Inc. Not responsible for any brain cells lost. 🎅
+    </div>
+        
+    </body>
+</html>
